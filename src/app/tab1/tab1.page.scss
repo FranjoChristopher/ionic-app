@@ -1,0 +1,77 @@
+ ion-header, ion-footer {
+  --background: #a3d5d3; /* light blue-green */
+  --color: #004d40; /* dark teal text */
+
+  ion-toolbar {
+    --background: #a3d5d3;
+    --color: #004d40;
+  }
+}
+
+ion-badge {
+  --background: #00796b; /* darker teal for badge */
+  --color: #e0f2f1; /* very light teal text */
+  font-weight: bold;
+}
+
+ion-content {
+  --background: #e0f2f1; /* very light teal background */
+
+  ion-card {
+    background: #ffffffcc; /* semi-transparent white */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 77, 64, 0.2);
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center contents including image */
+
+    img {
+      width: 100%;
+      max-width: 250px; /* optional: limit image width */
+      max-height: 180px;
+      object-fit: contain; /* prevent cropping */
+      display: block;
+      margin: 0 auto;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      padding: 10px;
+      background-color: #fff; /* ensure clean background behind image */
+    }
+
+    ion-card-header {
+      text-align: center;
+
+      ion-card-title {
+        color: #004d40;
+        font-weight: 600;
+      }
+
+      ion-card-subtitle {
+        color: #00796b;
+        font-weight: 500;
+      }
+    }
+
+    ion-button {
+      --background: #4db6ac;
+      --background-hover: #00897b;
+      --color: white;
+      font-weight: 600;
+      border-radius: 6px;
+      margin-top: 10px;
+      box-shadow: 0 2px 6px rgba(0, 121, 107, 0.3);
+    }
+  }
+}
+
+ion-footer {
+  --background: #a3d5d3;
+
+  ion-toolbar {
+    --background: #a3d5d3;
+    --color: #004d40;
+    text-align: center;
+    font-weight: 600;
+  }
+}
